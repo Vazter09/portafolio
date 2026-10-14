@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portafolio | Desarrollador Fullstack Freelance</title>
+  <meta name="description" content="Desarrollador fullstack freelance: aplicaciones web, APIs y productos digitales de principio a fin." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <a href="#inicio" class="logo">&lt;<span data-campo="iniciales">JA</span> /&gt;</a>
+    <nav class="nav-links">
+      <a href="#servicios">Servicios</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#stack">Stack</a>
+      <a href="#proceso">Proceso</a>
+    </nav>
+    <a href="#contacto" class="btn btn-sm">Contratar</a>
+  </header>
+
+  <main id="inicio">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <span class="badge"><span class="dot"></span> <span data-campo="disponibilidad">Disponible para nuevos proyectos</span></span>
+        <h1>
+          Hola, soy <span data-campo="nombre" class="gradient-text">Jose Álvarez</span>.<br />
+          Construyo <span class="gradient-text">productos web</span> de principio a fin.
+        </h1>
+        <p class="lead">
+          <span data-campo="rol">Desarrollador Fullstack</span> freelance. Diseño, desarrollo y despliegue
+          interfaces modernas, APIs robustas y bases de datos que escalan con tu negocio.
+        </p>
+        <div class="hero-actions">
+          <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+          <a href="#contacto" class="btn btn-ghost">Hablemos</a>
+        </div>
+        <ul class="stats">
+          <li><strong>+30</strong><span>Proyectos entregados</span></li>
+          <li><strong>+5</strong><span>Años de experiencia</span></li>
+          <li><strong>100%</strong><span>Clientes satisfechos</span></li>
+        </ul>
+      </div>
+
+      <!-- ===================================================== -->
+      <!--  CAJA EDITABLE: FOTO DE PERFIL Y NOMBRE                -->
+      <!--  Cambia la foto por tu archivo en img/perfil.jpg       -->
+      <!--  O edita CONFIG en script.js (nombre, rol, foto, etc.) -->
+      <!-- ===================================================== -->
+      <aside class="profile-card" aria-label="Perfil">
+        <div class="avatar-wrap">
+          <img data-campo="foto" src="img/perfil.jpg" alt="Foto de perfil" class="avatar" />
+          <span class="avatar-fallback" aria-hidden="true" data-campo="iniciales">JA</span>
+        </div>
+        <h2 data-campo="nombre">Jose Álvarez</h2>
+        <p class="profile-role" data-campo="rol">Desarrollador Fullstack</p>
+        <div class="profile-tags">
+          <span>React</span><span>Node.js</span><span>TypeScript</span><span>PostgreSQL</span>
+        </div>
+        <div class="profile-links">
+          <a href="#" data-campo="github" target="_blank" rel="noopener">GitHub</a>
+          <a href="#" data-campo="linkedin" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </aside>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="section">
+      <header class="section-head">
+        <span class="eyebrow">Servicios</span>
+        <h2>Qué puedo <span class="gradient-text">construir para ti</span></h2>
+        <p>Desde una landing hasta una plataforma completa. Un solo desarrollador, con visión de producto.</p>
+      </header>
+      <div class="grid grid-4">
+        <article class="card">
+          <div class="icon icon-violet">&lt;/&gt;</div>
+          <h3>Aplicaciones web</h3>
+          <p>SPAs y sitios rápidos, accesibles y optimizados para buscadores con React o Next.js.</p>
+        </article>
+        <article class="card">
+          <div class="icon icon-cyan">⚙</div>
+          <h3>APIs y backend</h3>
+          <p>REST y GraphQL con Node.js, autenticación, pagos y tareas en segundo plano.</p>
+        </article>
+        <article class="card">
+          <div class="icon icon-pink">▤</div>
+          <h3>Bases de datos</h3>
+          <p>Modelado, migraciones y consultas eficientes en PostgreSQL o MongoDB.</p>
+        </article>
+        <article class="card">
+          <div class="icon icon-violet">☁</div>
+          <h3>Despliegue y mantenimiento</h3>
+          <p>CI/CD, contenedores con Docker y soporte continuo después de la entrega.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="section">
+      <header class="section-head">
+        <span class="eyebrow">Proyectos</span>
+        <h2>Trabajo <span class="gradient-text">seleccionado</span></h2>
+        <p>Edita estas tarjetas con tus proyectos reales: título, descripción, etiquetas y enlaces.</p>
+      </header>
+      <div class="grid grid-3">
+        <article class="card project">
+          <div class="thumb thumb-1"><span>E-commerce</span></div>
+          <div class="project-body">
+            <h3>Tienda online con pagos</h3>
+            <p>Catálogo, carrito, pasarela de pagos y panel de administración para una marca de moda.</p>
+            <div class="tags"><span>React</span><span>Node</span><span>Stripe</span></div>
+            <a href="#" class="project-link">Ver caso →</a>
+          </div>
+        </article>
+        <article class="card project">
+          <div class="thumb thumb-2"><span>SaaS</span></div>
+          <div class="project-body">
+            <h3>Dashboard de métricas</h3>
+            <p>Plataforma multiusuario con gráficas en tiempo real y roles de acceso por equipo.</p>
+            <div class="tags"><span>Next.js</span><span>PostgreSQL</span><span>WebSockets</span></div>
+            <a href="#" class="project-link">Ver caso →</a>
+          </div>
+        </article>
+        <article class="card project">
+          <div class="thumb thumb-3"><span>API</span></div>
+          <div class="project-body">
+            <h3>API de reservas</h3>
+            <p>Sistema de citas con notificaciones por correo, zonas horarias y documentación OpenAPI.</p>
+            <div class="tags"><span>Express</span><span>MongoDB</span><span>Docker</span></div>
+            <a href="#" class="project-link">Ver caso →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- STACK -->
+    <section id="stack" class="section">
+      <header class="section-head">
+        <span class="eyebrow">Stack</span>
+        <h2>Herramientas con las que <span class="gradient-text">trabajo</span></h2>
+      </header>
+      <div class="stack-grid">
+        <div class="stack-group">
+          <h3>Frontend</h3>
+          <div class="chips">
+            <span class="chip c-js">JavaScript</span>
+            <span class="chip c-ts">TypeScript</span>
+            <span class="chip c-react">React</span>
+            <span class="chip c-next">Next.js</span>
+            <span class="chip c-css">Tailwind CSS</span>
+          </div>
+        </div>
+        <div class="stack-group">
+          <h3>Backend</h3>
+          <div class="chips">
+            <span class="chip c-node">Node.js</span>
+            <span class="chip c-express">Express</span>
+            <span class="chip c-py">Python</span>
+            <span class="chip c-gql">GraphQL</span>
+          </div>
+        </div>
+        <div class="stack-group">
+          <h3>Datos y DevOps</h3>
+          <div class="chips">
+            <span class="chip c-pg">PostgreSQL</span>
+            <span class="chip c-mongo">MongoDB</span>
+            <span class="chip c-docker">Docker</span>
+            <span class="chip c-git">Git</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESO -->
+    <section id="proceso" class="section">
+      <header class="section-head">
+        <span class="eyebrow">Proceso</span>
+        <h2>Cómo <span class="gradient-text">trabajamos</span></h2>
+      </header>
+      <div class="grid grid-3">
+        <article class="card step">
+          <div class="icon icon-violet">1</div>
+          <h3>Descubrimiento</h3>
+          <p>Entiendo tu negocio, defino alcance, prioridades y un presupuesto claro.</p>
+        </article>
+        <article class="card step">
+          <div class="icon icon-cyan">2</div>
+          <h3>Desarrollo iterativo</h3>
+          <p>Entregas frecuentes con demos semanales para que veas el avance real.</p>
+        </article>
+        <article class="card step">
+          <div class="icon icon-pink">3</div>
+          <h3>Lanzamiento y soporte</h3>
+          <p>Despliegue, pruebas, documentación y acompañamiento tras la entrega.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section">
+      <div class="cta card">
+        <span class="eyebrow">Contacto</span>
+        <h2>¿Tienes un proyecto en mente?</h2>
+        <p>Cuéntame qué necesitas y te respondo en menos de 24 horas.</p>
+        <div class="hero-actions">
+          <a href="#" data-campo="email" class="btn btn-primary">Enviar correo</a>
+          <a href="#" data-campo="whatsapp" target="_blank" rel="noopener" class="btn btn-ghost">WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="anio"></span> <span data-campo="nombre">Jose Álvarez</span>. Desarrollador Fullstack freelance.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
