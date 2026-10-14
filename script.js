@@ -9,7 +9,7 @@ const CONFIG = {
   foto: "img/perfil.jpg",          // Pon tu foto en la carpeta img/ con este nombre
   email: "tu@correo.com",
   whatsapp: "https://wa.me/520000000000", // Tu número con código de país, sin + ni espacios
-  github: "https://github.com/tu-usuario",
+  github: "https://github.com/Vazter09",
   linkedin: "https://linkedin.com/in/tu-usuario",
 };
 
